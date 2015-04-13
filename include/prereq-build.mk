@@ -153,6 +153,9 @@ $(eval $(call SetupHostCommand,git,Please install Git (git-core) >= 1.6.5, \
 $(eval $(call SetupHostCommand,file,Please install the 'file' package, \
 	file --version 2>&1 | grep file))
 
+$(eval $(call SetupHostCommand,msgfmt,Please install the 'gettext' package, \
+	msgfmt --version </dev/null))
+
 $(eval $(call SetupHostCommand,openssl,Please install the 'openssl' utility, \
 	openssl version | grep OpenSSL))
 
